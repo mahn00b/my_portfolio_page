@@ -1,0 +1,21 @@
+body {
+
+    background-color:
+            rgb(244, 188, 66 );
+}
+
+.jumbotron{
+    color: white;
+    background-color:rgb(234, 122, 2);
+
+}
+
+.weatherText{
+    font-size: 25px;
+
+
+}
+
+th{
+    text-align: center;
+}
