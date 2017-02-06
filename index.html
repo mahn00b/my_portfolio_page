@@ -18,11 +18,25 @@ Theme Color Dark: #ff1a1a;
 */
 
 
+    /*
+ Theme Color 1: #ff6666;
+
+
+ Theme Color Dark: #ff1a1a;
+
+
+ */
+
+
     html, body { overflow-x: hidden; }
 
     input {
         max-width: 300px;
 
+    }
+
+    li {
+        color:#ff6666;
     }
     #titleName
     {
@@ -100,133 +114,169 @@ Theme Color Dark: #ff1a1a;
         margin-bottom:0px;
     }
 
+    .project-well {
+        /* min-height:300px; */
+    }
+
+    .project-img {
+        height:220px;
+
+    }
+
+    .about_well {
+        border-color: #ff9999;
+        background-color: white;
+        width:500px;
+    }
+
+    .skill-icon{
+        height:100px;
+        width:100px;
+    }
+
+    #skillList li {
+        list-style-type: none;
+    }
+
 
 
 </style>
 <body>
 
-<div style="background-color: white;">
 
-    <div class="container well well-lg row center-block" style=" opacity:0.7;border-style: solid;  background-color: white; border-color:#ff6666; border-width:3px;">
+<link href="https://fonts.googleapis.com/css?family=Lobster|Ubuntu" rel="stylesheet">
 
-        <h2 id="titleName" class="text-xs-center col-lg-5 col-md-6 col-sm-6 col-xs-4" style="">Mahmoud Yousif </h2>
-        <span class="col-lg-4 col-md-6 col-sm-6 col-xs-2">
-       <img class=" img-rounded l-x-auto d-block" id="headerImage" src="http://test.mahmoudyousif.com/assets/images/inDaSuit.jpg" />
-          </span>
-        <small class ="col-lg-2 col-md-12 col-sm-12 col-xs-12"style="font-size:25px">Front-End Web Develpoer</small>
+<!--page header at the top -->
+<div class="container well well-lg row center-block" style=" opacity:0.7;border-style: solid;  background-color: white; border-color:#ff6666; border-width:3px;">
+    <!-- title containing my name -->
+    <h2 id="titleName" class="text-xs-center text-center col-lg-4 col-md-4 col-sm-3 col-xs-12" style="">Mahmoud Yousif</h2>
+
+    <div class="wrapper text-center">
+  <span class="col-lg-4 col-md-4 col-sm-6 col-xs-12 center-block">
+       <img class="img-responsive img-rounded center-block" id="headerImage" src="http://test.mahmoudyousif.com/assets/images/inDaSuit.jpg" />
+  </span>
+    </div>
+
+    <small class ="col-lg-3 col-md-4 col-sm-4 col-xs-12 text-center"style="font-size:25px">Front-End Web Developer</small>
 
 
-    </div> <!-- ./container-->
+</div> <!-- ./container with page header-->
 
-    <div style="background-color: white;"> <!-- background for page -->
+<div style="background-color: white;"> </div><!-- background for page -->
 
-        <nav class="navbar navbar-default" style="color:#ff6666; border-style: solid;border-color:#ff6666; background-color: white; border-width:2px;font-family:lobster;">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="navBar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#about">About Me<span class="sr-only">(current)</span></a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact Me!</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <a href="https://www.facebook.com/mahmoud.yousif.902?fref=ts">
-                            <li>
-                                <img class="icon" src="https://en.facebookbrand.com/wp-content/uploads/2016/05/FB-fLogo-Blue-broadcast-2.png" /></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/mahn00b"><img class="icon" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" style="width:30px;" /></a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+    <nav class="navbar navbar-default" style="color:#ff6666; border-style: solid;border-color:#ff6666; background-color: white; border-width:2px;font-family:lobster;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-            <!-- /.container-fluid -->
-        </nav>
+            <div class="collapse navbar-collapse" id="navBar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li id="aboutTab" class="active select"><a href="#about" >About Me<span class="sr-only">(current)</span></a></li>
+                    <li id="portfolioTab"><a  class="select"href="#portfolio">Portfolio</a></li>
+                    <li id="contactTab" class="select"><a href="#contact" >Contact Me!</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <a href="https://www.facebook.com/mahmoud.yousif.902?fref=ts">
+                        <li>
+                            <img class="icon" src="https://en.facebookbrand.com/wp-content/uploads/2016/05/FB-fLogo-Blue-broadcast-2.png" /></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mahn00b"><img class="icon" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" style="width:30px;" /></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <div class="container">
+
+
+        <div class="jumbotron">
 
 
 
-
-        <div class="container">
-
-            <div class="jumbotron">
-
+            <div id="about" class="container" style="">
                 <div class="page-header">
                     <h2>About Me</h2>
 
                 </div>
-                <div id="about" class="row container">
-
-                    <div class="col-lg-4">
-                        <h4 >
-                            Welcome to my page! I'm a computer science major at Salisbury university trying to get some experience as a web developer during my studies. Programming is a passion of mine, so much so that I try to do it during any amount of free time I have available. </h4>
-                    </div><!-- ./short about -->
-                    <div class="col-lg-6">
-                        <h4>Technical Skills: <br>
-                            <ul>
-                                <li> HTML5, CSS, Javascript</li>
-                                <li> responsive web design </li>
-                                <li> using 3rd party api services</li>
-                                <li> using Github and git</li>
-                                <li> using libraries such as: twitter Bootstrap, Animate.css, Jquery, etc.</li>
-                                <li>Algorithm Analysis (Big-O, Big-&Theta;, Big-&Omega;)</li>
-
-                            </ul>
-                        </h4>
-                    </div><!-- ./technical skills -->
-                </div> <!-- /.about container -->
-
-                <div id="portfolio" class=" row container">
-                    <div class="page-header">
-                        <h2>Portfolio</h2>
+                <div class="row container well about_well">
+                    <h2>Who Am I? </h2>
+                    <h4 style="font-family:Ubuntu;color:black;">
+                        Welcome to my page! I'm a computer science major at Salisbury university trying to get some experience as a web developer during my studies. Programming is a passion of mine, so much so that I try to do it during any amount of free time I have available. </h4>
+                </div><!-- ./short about -->
+                <div class="row container well about_well pull-right" style="width:600px;">
+                    <h2>Technical Skills <br></h2>
+                    <div id="skillList" class="container" >
+                        <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-3"> <img class ="skill-icon" src ="/assets/images/html5_icon.png" /></div>
+                        <div class="col-lg-4 col-md-4 col-sm-3"> <img class ="skill-icon" src ="/assets/images/css_icon.png" /> </div>
+                        <div class="col-lg-4 col-md-4 col-sm-3"> <img class ="skill-icon" src ="/assets/images/javascript_icon.png" /></div>
+                            </div>
+                        <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-3"><img class ="skill-icon" src ="/assets/images/jquery_icon.png" /></div>
+                        <div class="col-lg-4 col-md-4 col-sm-3"> <img class ="skill-icon" src ="/assets/images/bootstrap_icon.png" /></div>
+                        <div class="col-lg-4 col-md-4 col-sm-3"><img class ="skill-icon" src ="/assets/images/github_icon.png" /></div>
+                            </div>
                     </div>
-                    <div id="frameWell" class="container row">
+                </div><!-- ./technical skills -->
 
 
-                    </div>
+            </div> <!-- ./about container -->
 
-                </div> <!-- ./portfolio -->
+            <div id="portfolio" class=" row container" style="padding-bottom:100px; margin-bottom:100px;">
                 <div class="page-header">
-                    <h2>Contact Me <small>I would appreciate a job or internship.</small></h2>
+                    <h2>Portfolio</h2>
+                </div>
+                <div id="frameWell" class="container row" style="padding:0px;">
+
+
+                </div>
+
+            </div> <!-- ./portfolio -->
+
+            <div id="contact" class="container" style="margin-bottom:800px;">
+                <div class="page-header">
+                    <h2 style="margin-bottom:50px;">Contact Me <small>I would appreciate a job or internship.</small></h2>
 
                 </div><!-- ./page-header -->
-                <div id="contact" class="container">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="nameInput">Full Name</label>
-                            <input type="name" class="form-control" id="nameInput" aria-describedby="namehelp" placeholder="Enter name">
-                            <small id="namehelp" class="form-text text-muted">I need to know who you are</small>
-                        </div><!-- ./ nameFormGroup -->
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="nameInput">Full Name</label>
+                        <input type="name" class="form-control" id="nameInput" aria-describedby="namehelp" placeholder="Enter name">
+                        <small id="namehelp" class="form-text text-muted">I need to know who you are</small>
+                    </div><!-- ./ nameFormGroup -->
 
-                        <div class="form-group">
-                            <label for="emailInput">E-mail</label>
-                            <input type="email" class="form-control" id="emailInput" aria-describedby="emailhelp" placeholder="Enter E-mail">
-                            <small id="emailhelp" class="form-text text-muted">How do I contact you back?</small>
-                        </div><!-- ./ emailFormGroup -->
+                    <div class="form-group">
+                        <label for="emailInput">E-mail</label>
+                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailhelp" placeholder="Enter E-mail">
+                        <small id="emailHelp" class="form-text text-muted">How do I contact you back?</small>
+                    </div><!-- ./ emailFormGroup -->
 
-                        <div class="form-group">
-                            <label for="messageTextarea">Write me a Message!</label>
-                            <textarea class="form-control" id="messageInput" rows="3" aria-describedby="messagehelp" placeholder="Enter message"></textarea>
-                            <small id="messagehelp" class="form-text text-muted">I'll try and reply as soon as possible!</small>
-                        </div><!-- ./message-text-area -->
+                    <div class="form-group">
+                        <label for="messageInput">Write me a Message!</label>
+                        <textarea class="form-control" id="messageInput" rows="3" aria-describedby="messagehelp" placeholder="Enter message"></textarea>
+                        <small id="messagehelp" class="form-text text-muted">I'll try and reply as soon as possible!</small>
+                    </div><!-- ./message-text-area -->
 
-                        <h2 id="incorrectInput" class="text-danger" style=""></h2> <!-- error message -->
-                    </form> <!-- ./contact form -->
-                    <button id="subButton" class="btn btn-primary">Submit</button>
-                </div><!-- ./contact-page -->
+                    <h2 id="incorrectInput" class="text-danger" style=""></h2> <!-- error message -->
+                </form> <!-- ./contact form -->
+                <button id="subButton" class="btn btn-primary">Submit</button>
+            </div><!-- ./contact-page -->
 
-            </div> <!--- container/jumbotron closing tags-->
-</div>
+        </div> <!--- container/jumbotron closing tags-->
+    </div>
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
 <script>
     var webArray = [
         ["Simon Game", "http://codepen.io/mahn00b/full/oLPRGG/", "https://qq1gmq-sn3302.files.1drv.com/y3mnXWCuSvr_xD5dbX9NhNFjwLVGbBHHvJMecFIVzDjUhd4A1e4VMObW55gssjv0quCIsPGBdDgTbJXFEBcBZvbzg6DsjOu9DXELl9I5wRaiOhK4g2X3xpw9WnP8bNjMvhEt0XBUpjU4YexDZgshXrHzaX7zlVvhswlK1WTtCJLAF8?width=1349&height=693&cropmode=none"],
@@ -308,6 +358,43 @@ Theme Color Dark: #ff1a1a;
             });
         }
     });
+
+
+    $(window).scroll(function() {
+
+        var windscroll = $(window).scrollTop();
+
+        console.log($("#about").offset().top-windscroll);
+
+        if(($("#about").offset().top-windscroll <= 0) &&
+                ($("#portfolio").offset().top-windscroll > 0)){
+
+            switchActiveNav('about');
+
+        } else if(($("#portfolio").offset().top-windscroll <= 0) &&
+                ($("#contact").offset().top-windscroll > 0 )) {
+
+            switchActiveNav('portfolio');
+
+        }
+
+        if ($("#contact").offset().top-windscroll <= 0 && $("#portfolio").offset().top-windscroll < 0){
+            switchActiveNav('contact');
+        }
+
+    });
+
+
+    function switchActiveNav(id){
+        var active = $('.navbar-left .active')
+        var navbar = $('.navbar-left  .select');
+        if($(active[0]).attr('id').split('Tab')[0] != id){
+
+            $(active).removeClass('active');
+            $("#"+id+"Tab").addClass('active');
+        }
+
+    }
 
 
 
