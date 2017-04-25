@@ -179,14 +179,17 @@
     //The purpose of recording it is for the smooth scroll functionality
     var sectionIds = [];
 
-    //populate sectionID's
 
-    $("#navBar ul li a").get().forEach(function (element) {//Get Id's for sections based on navbar sections
+    //populate sectionID's for smooth scroll implementation
+    //Get Id's for sections based on navbar sections
+    $("#navBar ul li a").get().forEach(function (element) {
 
         if($(element).attr('id') > "")//just in case there are links I haven't put yet
             sectionIds.push($(element).attr('id').toString().split('Nav')[0]);
     });
 
+
+    //populate the portfolio section based a single element theme
     webArray.forEach(function(element, index, array) {
 
 
@@ -202,6 +205,8 @@
     });
 
 
+    //Smooth Scroll Functionality:
+    //customize scroll function to change nav selector
     $(window).scroll( function () {
         var windscroll = $(document).scrollTop()+50;//get where user is looking, add 50 for accuracy
 
@@ -222,9 +227,9 @@
         })
 
 
-    });//customize scroll function to change nav selector
+    });
 
-
+    //cover any conflicts in assign active class
     $(".nav li").on("click", function() {
         $(".nav li").removeClass("active");
         $(this).addClass("active");
@@ -281,7 +286,7 @@
 
 
         } else {
-
+            //if any of the inputs were incorrect
             $("#incorrectInput").text("One or more fields are incomplete");
             e.preventDefault();
         }
@@ -290,7 +295,7 @@
     });
 
 
-    //this function is designed to allow for smooth scrolling:
+
 
 
 </script>
