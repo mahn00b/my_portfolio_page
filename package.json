@@ -1,0 +1,28 @@
+{
+  "name": "my_personal_portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio page",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.1",
+    "pug": "^2.0.0-beta10",
+    "socket.io": "^1.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahn00b/my_portfolio_page.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Mahmoud Yousif",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mahn00b/my_portfolio_page/issues"
+  },
+  "homepage": "https://github.com/mahn00b/my_portfolio_page#readme"
+}

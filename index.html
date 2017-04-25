@@ -1,150 +1,30 @@
 <html>
 <head>
     <title>Mahmoud Yousif</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/pStyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
     <meta name="description" content="Hey, if you were searching for it you found it, if not then you found something even better. Welcome to Mahmoud Yousif's official portfolio page!">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+    <!--Dependencies: -->
+    <!-- JQuery: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Twitter Bootstrap CSS: -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Ubuntu" rel="stylesheet">
+
+    <!-- Css Styles: -->
+    <link rel="stylesheet" href="/styles/style.css?v=2400">
+
+
 </head>
-<style>
-    /*
-Theme Color 1: #ff6666;
-
-
-Theme Color Dark: #ff1a1a;
-
-
-*/
-
-
-    /*
- Theme Color 1: #ff6666;
-
-
- Theme Color Dark: #ff1a1a;
-
-
- */
-
-
-    html, body { overflow-x: hidden; }
-
-    input {
-        max-width: 300px;
-
-    }
-
-    li {
-        color:#ff6666;
-    }
-    #titleName
-    {
-        font-family:lobster;
-        font-size:50px;
-        color: black;
-        margin-left:5px;
-
-    }
-
-
-    #headerImage
-    {
-        border-radius:90px;
-        width:200px;
-        border-width:3px;
-        border-style:solid;
-        border-color:#ff1a1a;
-
-    }
-
-    #messageTextarea {
-        max-width: 450px;
-        max-height: 50px;
-    }
-
-    .jumbotron
-    {
-
-        background-color: white;
-        border-width:3px;
-        font-family: lobster;
-        color:#ff1a1a;
-    }
-
-    .icon
-    {
-        width: 25px;
-        top:0;
-        margin-top:0px;
-    }
-
-
-    .pWell
-    {
-        width:200px;
-        height:200px;
-    }
-
-    .navbar-default .navbar-nav > .active{
-        color: black;
-        background:#ff9999;
-    }
-    .navbar-default .navbar-nav > .active > a,
-    .navbar-default .navbar-nav > .active > a:hover,
-    .navbar-default .navbar-nav > .active > a:focus {
-        color:black;
-        background:#ff9999;
-
-    }
-    .thumbnail
-    {
-        width: auto;
-        height: 180px;
-        padding:auto;
-    }
-
-    .navbar {
-
-        position:fixed;
-        bottom: 0;
-        width:100%;
-        z-index: 3;
-        margin-top: 20px;
-        margin-bottom:0px;
-    }
-
-    .project-well {
-        /* min-height:300px; */
-    }
-
-    .project-img {
-        height:220px;
-
-    }
-
-    .about_well {
-        border-color: #ff9999;
-        background-color: white;
-        width:500px;
-    }
-
-    .skill-icon{
-        height:100px;
-        width:100px;
-    }
-
-    #skillList li {
-        list-style-type: none;
-    }
-
-
-
-</style>
 <body>
 
 
-<link href="https://fonts.googleapis.com/css?family=Lobster|Ubuntu" rel="stylesheet">
+
 
 <!--page header at the top -->
 <div class="container well well-lg row center-block" style=" opacity:0.7;border-style: solid;  background-color: white; border-color:#ff6666; border-width:3px;">
@@ -153,7 +33,7 @@ Theme Color Dark: #ff1a1a;
 
     <div class="wrapper text-center">
   <span class="col-lg-4 col-md-4 col-sm-6 col-xs-12 center-block">
-       <img class="img-responsive img-rounded center-block" id="headerImage" src="http://test.mahmoudyousif.com/assets/images/inDaSuit.jpg" />
+       <img class="img-responsive img-rounded center-block" id="headerImage" src="/static/inDaSuit.jpg" />
   </span>
     </div>
 
@@ -162,152 +42,201 @@ Theme Color Dark: #ff1a1a;
 
 </div> <!-- ./container with page header-->
 
-<div style="background-color: white;"> </div><!-- background for page -->
 
-    <nav class="navbar navbar-default" style="color:#ff6666; border-style: solid;border-color:#ff6666; background-color: white; border-width:2px;font-family:lobster;">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navBar">
-                <ul class="nav navbar-nav navbar-left">
-                    <li id="aboutTab" class="active select"><a href="#about" >About Me<span class="sr-only">(current)</span></a></li>
-                    <li id="portfolioTab"><a  class="select"href="#portfolio">Portfolio</a></li>
-                    <li id="contactTab" class="select"><a href="#contact" >Contact Me!</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <a href="https://www.facebook.com/mahmoud.yousif.902?fref=ts">
-                        <li>
-                            <img class="icon" src="https://en.facebookbrand.com/wp-content/uploads/2016/05/FB-fLogo-Blue-broadcast-2.png" /></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/mahn00b"><img class="icon" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" style="width:30px;" /></a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<nav  class="navbar navbar-default" style="color:#ff6666; border-style: solid;border-color:#ff6666; background-color: white; border-width:2px;font-family:lobster;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="navbar-brand"><img src="/static/logo_XS.png"></div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-
-    <div class="container">
-
-
-        <div class="jumbotron">
-
-
-
-            <div id="about" class="container" style="">
-                <div class="page-header">
-                    <h2>About Me</h2>
-
-                </div>
-                <div class="row container well about_well">
-                    <h2>Who Am I? </h2>
-                    <h4 style="font-family:Ubuntu;color:black;">
-                        Welcome to my page! I'm a computer science major at Salisbury university trying to get some experience as a web developer during my studies. Programming is a passion of mine, so much so that I try to do it during any amount of free time I have available. </h4>
-                </div><!-- ./short about -->
-                <div class="row container well about_well pull-right" style="width:600px;">
-                    <h2>Technical Skills <br></h2>
-                    <div id="skillList" class="container" >
-                        <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-3"> <img class ="skill-icon" src ="/assets/images/html5_icon.png" /></div>
-                        <div class="col-lg-4 col-md-4 col-sm-3"> <img class ="skill-icon" src ="/assets/images/css_icon.png" /> </div>
-                        <div class="col-lg-4 col-md-4 col-sm-3"> <img class ="skill-icon" src ="/assets/images/javascript_icon.png" /></div>
-                            </div>
-                        <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-3"><img class ="skill-icon" src ="/assets/images/jquery_icon.png" /></div>
-                        <div class="col-lg-4 col-md-4 col-sm-3"> <img class ="skill-icon" src ="/assets/images/bootstrap_icon.png" /></div>
-                        <div class="col-lg-4 col-md-4 col-sm-3"><img class ="skill-icon" src ="/assets/images/github_icon.png" /></div>
-                            </div>
-                    </div>
-                </div><!-- ./technical skills -->
-
-
-            </div> <!-- ./about container -->
-
-            <div id="portfolio" class=" row container" style="padding-bottom:100px; margin-bottom:100px;">
-                <div class="page-header">
-                    <h2>Portfolio</h2>
-                </div>
-                <div id="frameWell" class="container row" style="padding:0px;">
-
-
-                </div>
-
-            </div> <!-- ./portfolio -->
-
-            <div id="contact" class="container" style="margin-bottom:800px;">
-                <div class="page-header">
-                    <h2 style="margin-bottom:50px;">Contact Me <small>I would appreciate a job or internship.</small></h2>
-
-                </div><!-- ./page-header -->
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="nameInput">Full Name</label>
-                        <input type="name" class="form-control" id="nameInput" aria-describedby="namehelp" placeholder="Enter name">
-                        <small id="namehelp" class="form-text text-muted">I need to know who you are</small>
-                    </div><!-- ./ nameFormGroup -->
-
-                    <div class="form-group">
-                        <label for="emailInput">E-mail</label>
-                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailhelp" placeholder="Enter E-mail">
-                        <small id="emailHelp" class="form-text text-muted">How do I contact you back?</small>
-                    </div><!-- ./ emailFormGroup -->
-
-                    <div class="form-group">
-                        <label for="messageInput">Write me a Message!</label>
-                        <textarea class="form-control" id="messageInput" rows="3" aria-describedby="messagehelp" placeholder="Enter message"></textarea>
-                        <small id="messagehelp" class="form-text text-muted">I'll try and reply as soon as possible!</small>
-                    </div><!-- ./message-text-area -->
-
-                    <h2 id="incorrectInput" class="text-danger" style=""></h2> <!-- error message -->
-                </form> <!-- ./contact form -->
-                <button id="subButton" class="btn btn-primary">Submit</button>
-            </div><!-- ./contact-page -->
-
-        </div> <!--- container/jumbotron closing tags-->
+        <div class="collapse navbar-collapse" id="navBar">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="active select"><a  id="aboutNav" href="#about" >About Me<span class="sr-only">(current)</span></a></li>
+                <li ><a id="portfolioNav" class="select"href="#portfolio">Portfolio</a></li>
+                <li  class="select"><a id="contactNav" href="#contact" >Contact Me!</a></li>
+                <li  class="select"><a id="" href="" >Blog<br><small>(Coming Soon)</small></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="https://www.facebook.com/mahmoud.yousif.902?fref=ts">
+                        <img class="icon" src="/static/facebook_brand.png" /></a>
+                </li>
+                <li>
+                    <a href="https://github.com/mahn00b">
+                        <img class="icon" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" style="width:30px;" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<div class="container">
+
+
+    <div class="jumbotron">
+
+
+
+        <div id="about" class="container" style="">
+            <div class="page-header">
+                <h2>About Me</h2>
+
+            </div>
+            <!-- short about -->
+            <div class="row container well about_well">
+                <h2>Who Am I? </h2>
+                <h4 style="font-family:Ubuntu;color:black;">
+                    Passionate computer science student, seeking an internship. I'm a certified front-end web developer bringing experience in deploying fully functional web Apps. My objective is to gain some industry experience, but most importantly to me, however, is to learn and expand my skill set to become a better developer.                </div><!-- ./short about -->
+            <!--technical skills-->
+            <div class="row container well about_well pull-right" style="width:600px;">
+                <h2>Technical Skills <br></h2>
+                <div id="skillList" class="container" >
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3"> <img class ="skill-icon" src ="/static/html5_icon.png" alt="html5_icon"/></div>
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3"> <img class ="skill-icon" src ="/static/css_icon.png" alt="css_icon"/> </div>
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3"> <img class ="skill-icon" src ="/static/icons/javascript_icon.png" alt="javascript_icon"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3"><img class ="skill-icon" src ="/static/jquery_icon.png" alt="jquery_icon"/></div>
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3"> <img class ="skill-icon" src ="/static/bootstrap_icon.png" alt="bootstrap_icon"/></div>
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3"><img class ="skill-icon" src ="/static/github_icon.png" alt="github_icon"/></div>
+                    </div>
+                </div>
+            </div><!-- ./technical skills -->
+
+
+        </div> <!-- ./about container -->
+
+        <div id="portfolio" class="row container" style="padding-bottom:100px; margin-bottom:100px;">
+            <div class="page-header">
+                <h2>Portfolio</h2>
+            </div>
+            <div id="frameWell" class="container row" style="padding:0px;">
+
+
+            </div>
+
+        </div> <!-- ./portfolio -->
+
+        <div id="contact" class="container" style="margin-bottom:800px;">
+            <div class="page-header">
+                <h2 style="margin-bottom:50px;">Contact Me <small>I would appreciate a job or internship.</small></h2>
+
+            </div><!-- ./page-header -->
+            <form id="contact_form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="name" class="form-control" id="name" aria-describedby="namehelp" placeholder="Enter name">
+                    <small id="namehelp" class="form-text text-muted">I need to know who you are</small>
+                </div><!-- ./ nameFormGroup -->
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailhelp" placeholder="Enter E-mail">
+                    <small id="emailHelp" class="form-text text-muted">How do I contact you back?</small>
+                </div><!-- ./ emailFormGroup -->
+
+                <div class="form-group">
+                    <label for="message">Write me a Message!</label>
+                    <textarea class="form-control" id="message" rows="3" aria-describedby="messagehelp" placeholder="Enter message"></textarea>
+                    <small id="messagehelp" class="form-text text-muted">I'll try and reply as soon as possible!</small>
+                </div><!-- ./message-text-area -->
+
+                <h2 id="incorrectInput" class="text-danger" style=""></h2> <!-- error message -->
+                <button type="submit" value="submit" id="subButton" class="btn btn-primary">Submit</button>
+
+            </form> <!-- ./contact form -->
+
+        </div><!-- ./contact-page -->
+
+    </div> <!--- container/jumbotron closing tags-->
+</div>
 
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 <script>
+    //The webArray holds the websites and links to different websites I want to display on my portfolio
+    //pattern [websiteName, websiteLink, Image in directory]
     var webArray = [
-        ["Simon Game", "http://codepen.io/mahn00b/full/oLPRGG/", "https://qq1gmq-sn3302.files.1drv.com/y3mnXWCuSvr_xD5dbX9NhNFjwLVGbBHHvJMecFIVzDjUhd4A1e4VMObW55gssjv0quCIsPGBdDgTbJXFEBcBZvbzg6DsjOu9DXELl9I5wRaiOhK4g2X3xpw9WnP8bNjMvhEt0XBUpjU4YexDZgshXrHzaX7zlVvhswlK1WTtCJLAF8?width=1349&height=693&cropmode=none"],
-        ["Current Weather", "http://weather.mahmoudyousif.com", "https://qv1gmq-sn3302.files.1drv.com/y3mhqq-39KOpmt-jVLAuLL862sEoRmZAYeZXC1X0qqUuycwXMm01csBGckeGhm-rtSpJa2kspyzP7GXkNTAD8-T7iYmzoW6up-NvC7wYcR8SJ1uELGoCleR2-EmHUeTENK7-DWFSMPRpoPObCA0GwQBLSr41BKaMl4Lj17XxbBRmcQ?width=1348&height=713&cropmode=none"],
-        ["JavaScript Calculator", "http://codepen.io/mahn00b/full/ZOKYKG", "https://qf1gmq-sn3302.files.1drv.com/y3mTFA5SktCrLDE2DRoVyHi3mAj77La0TvBwO6KLGWYx90IBkgrbsaD6ybzNuTaZ48elKidl6hyB18xnH9RPDjXV3GcpO-IxBFGCnM6hBB6lYeKlUvr3zD7ZarmIWCA_oJjHrAc7PRq8tWp8IgLlkoToF33Ew2UgzEBwMsoBG8oRKk?width=1348&height=672&cropmode=none"],
-        ["Pomodoro Clock", "http://codepen.io/mahn00b/full/VjzKaZ","https://8f1gmq-sn3302.files.1drv.com/y3m1OdIH-bjaf2oM0b0N9zxqlsHrgH81tmjr-sH7ufbapQRtu_a0WmRnwR0HME83YNfw1Y8jom6dzIJFISxROZmIZ1dVUz0NEIztD8jghf4kxf1fR7g6dLwBg-R6E1c9t3cP1-jDHj7F96wo3bnYIQdnRLtQIhHSJ_FimoxY4CFEBM?width=1349&height=697&cropmode=none"],
-        ["President Obama Tribute", "http://codepen.io/mahn00b/full/yJmqGv/", "https://qp1gmq-sn3302.files.1drv.com/y3mjW7hAflxmV4weir425gaHeK9yM95uzuYr9VBE5Fc6hMa-Te7MUfZ_DrZqkHdpQ9oSANZB-7xzwNIYrvdlhXS-QUDZDLZNKC0sZbfZbkQdkstPBA254sz5LEajDzYGKuCodFk0lYNapkOOVvDTJbXS7cq9DVyOtHt_tptxjoLenk?width=1347&height=721&cropmode=none"],
-        ["Free Quotes", "freequotes.mahmoudyousif.com","https://pq1gmq-sn3302.files.1drv.com/y3m6TOJfJEEcJGmeTkpLnUxFFIWT3GjU0qhB9uz6ov88-YcIykhUUUVZWYU5igi4d-nXU4CJkRnD-M5bE2GntFZNu2NSX09KW0gW53YuH0IP4MVe0w_gCf2iyiqytm2ME49VIX3gkzQQ0uWbTCqELWSMD58F3jRe059YvHl69GaBvw?width=1362&height=443&cropmode=none"]
+        ["The Man Cave LLC", "http://www.mancavesalisbury.com", "/static/mancavellc_sample.png"],
+        ["Simon Game", "http://codepen.io/mahn00b/full/oLPRGG/", "/static/simon_sample.png"],
+        ["Current Weather", "http://weather.mahmoudyousif.com", "/static/weather_sample.png"],
+        /* ["JavaScript Calculator", "http://codepen.io/mahn00b/full/ZOKYKG", "assets/images/web_samples/calculator_sample.png"],*/
+        ["Pomodoro Clock", "http://codepen.io/mahn00b/full/VjzKaZ","/static/pomodoro_sample.png"],
+        ["President Obama Tribute", "http://codepen.io/mahn00b/full/yJmqGv/", "/static/obama_sample.png"],
+        ["Free Quotes", "freequotes.mahmoudyousif.com","/static/quotes_s_sample.png"]
     ];
+    //sectionIds will hold the id's of all the sections on the portfolio
+    //The purpose of recording it is for the smooth scroll functionality
+    var sectionIds = [];
 
+    //populate sectionID's
 
+    $("#navBar ul li a").get().forEach(function (element) {//Get Id's for sections based on navbar sections
+
+        if($(element).attr('id') > "")//just in case there are links I haven't put yet
+            sectionIds.push($(element).attr('id').toString().split('Nav')[0]);
+    });
 
     webArray.forEach(function(element, index, array) {
 
-        $("#frameWell").append('<div class="col-lg-6 col-md-4 col-sm-5 col-xs-7">' +
-                ' <div class="well">' + '<a href="' + element[1] + '">' +'<img class="img-responsive" src="' + element[2] + '" alt="Image Not Available"></img><div class="caption">' +
-                '<h3 >' + element[0] + '</h3></div></a></div></div>');
+
+
+        $("#frameWell").append('<div class="col-3">' +
+            ' <div class="well">' + '<a href="' + element[1] + '">' +'<img class="img-responsive" src="'
+            + element[2] + '" alt="Image Not Available"></img><div class="caption">' +
+            '<h3 >' + element[0] + '</h3></div></a></div></div>');
+
+
+
 
     });
+
+
+    $(window).scroll( function () {
+        var windscroll = $(document).scrollTop()+50;//get where user is looking, add 50 for accuracy
+
+        //check each section:
+        sectionIds.forEach(function (element) {
+
+            var curNav = $("#"+element+"Nav"); //get nav element
+            var navRef = $($(curNav).attr("href"));//get the section nav refrences
+
+            if (navRef.position().top <= windscroll && navRef.position().top + navRef.height() >= windscroll) {
+                //if the top of the section has passed user's view and user is scrolling in the section
+                $('#navBar.navbar-left ul li.active').removeClass("active");//remove the current active nav
+                curNav.parent().addClass("active");//add active class to current Nav's parent li element
+            }
+            else
+                curNav.parent().removeClass("active");//shouldn't contain active class, but removes it just in case
+
+        })
+
+
+    });//customize scroll function to change nav selector
+
 
     $(".nav li").on("click", function() {
         $(".nav li").removeClass("active");
         $(this).addClass("active");
     });
 
-    $("#subButton").on("click", function(){
+    //Jquery submit to handle the submission of messages
+    $("#contact_form").submit(function(e){
 
 
+        var correct = true; //true when all input fields have been filled
 
-        var correct = true;
-
+        //if any of the fields for the message is empty set correct to false:
         if($("#nameInput").val() === ""){
             correct = false;
             $("#nameInput").animateCss("shake");
@@ -327,76 +256,41 @@ Theme Color Dark: #ff1a1a;
         }
 
         if(correct){
-            sendEmail();
+            //if all fields have been filled
             $("#incorrectInput").text("");
-        }
-        else {
+            $("#nameInput").toggleClass("shake", false);
 
-            $("#incorrectInput").text("One or more fields are incorrect");
+            //the information needs to be stored in a JSON format
+            var obj = {"name":$("#name").val(),
+                "message": $("#message").val(),
+                "email":$("#email").val()};
 
-        }
-
-
-    });
-
-
-    function sendEmail () {
-        $("#nameInput").toggleClass("shake", false);
-        //the purpose of this function is to send a message
-        //based on the contact me information
-        console.log('Mack is the man');
-    }
-
-
-
-    /* This jquery extension is being used to animate things once */
-    $.fn.extend({
-        animateCss: function (animationName) {
-            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-            this.addClass('animated ' + animationName).one(animationEnd, function() {
-                $(this).removeClass('animated ' + animationName);
+            //ajax POST request to node server, to handle message:
+            $.ajax({
+                type: "POST",
+                url: "http://mahmoudyousif.com:8080/myMessages",
+                data: obj,
+                dataType: ""
+            }).fail(function (){
+                //when the post request fails notify the user
+                $("#incorrectInput").text("There was an error sending the message, " +
+                    "try again later. Sorry for the inconvenience. :(");
+                //stop form from submitting
+                e.preventDefault();
             });
-        }
-    });
 
 
-    $(window).scroll(function() {
+        } else {
 
-        var windscroll = $(window).scrollTop();
-
-        console.log($("#about").offset().top-windscroll);
-
-        if(($("#about").offset().top-windscroll <= 0) &&
-                ($("#portfolio").offset().top-windscroll > 0)){
-
-            switchActiveNav('about');
-
-        } else if(($("#portfolio").offset().top-windscroll <= 0) &&
-                ($("#contact").offset().top-windscroll > 0 )) {
-
-            switchActiveNav('portfolio');
-
+            $("#incorrectInput").text("One or more fields are incomplete");
+            e.preventDefault();
         }
 
-        if ($("#contact").offset().top-windscroll <= 0 && $("#portfolio").offset().top-windscroll < 0){
-            switchActiveNav('contact');
-        }
 
     });
 
 
-    function switchActiveNav(id){
-        var active = $('.navbar-left .active')
-        var navbar = $('.navbar-left  .select');
-        if($(active[0]).attr('id').split('Tab')[0] != id){
-
-            $(active).removeClass('active');
-            $("#"+id+"Tab").addClass('active');
-        }
-
-    }
-
-
+    //this function is designed to allow for smooth scrolling:
 
 
 </script>
