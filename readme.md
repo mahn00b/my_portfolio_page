@@ -64,7 +64,7 @@ Front-End web developer certificate at www.freecodecamp.com. It’s a great webs
 aspiring web developers to learn for free, and I recommend it to anyone looking to gain
 skills in web design or development.</p>
 
-<h3>Projects:</h3>
+
 <ul>
 <li><a href="http://www.mancavesalisbury.com"><h4>TheManCaveLLC</h4></a></li>
     <p>A website I designed for a barber shop<br>
@@ -83,8 +83,7 @@ skills in web design or development.</p>
     randomized quotes and further allows the current, and last three<br>
     generated quotes to twitter.</p>
 <li><a href="http://codepen.io/mahn00b/full/VjzKaZ"><h4>Pomodoro Clock</h4></a></li>
-<p>FreeCodeCamp project, implementation of a
-     [pomodoro clock](https://en.wikipedia.org/wiki/Pomodoro_Technique).
+<p>FreeCodeCamp project, implementation of a pomodoro clock.
      Project was barely completed, however, it did require some<br>
      intricate event-driven Javascript.</p>
 </ul>
