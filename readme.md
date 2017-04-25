@@ -64,27 +64,26 @@ Front-End web developer certificate at www.freecodecamp.com. It’s a great webs
 aspiring web developers to learn for free, and I recommend it to anyone looking to gain
 skills in web design or development.</p>
 
-<h3>Projects:</h3>
+
 <ul>
-<li><a href=""><h4>TheManCaveLLC</h4></a></li>
+<li><a href="http://www.mancavesalisbury.com"><h4>TheManCaveLLC</h4></a></li>
     <p>A website I designed for a barber shop<br>
        utilizing similar skills and tools.</p>
-<li><a href=""><h4>WeatherTime</h4></a></li>
+<li><a href="http://weather.mahmoudyousif.com"><h4>WeatherTime</h4></a></li>
     <p>FreeCodeCamp project, calls to an api to get<br>
        local weather data.</p>
-<li><a href=""><h4>Simon Game</h4></a></li>
+<li><a href="http://codepen.io/mahn00b/full/oLPRGG/"><h4>Simon Game</h4></a></li>
     <p>FreeCodeCamp final project, utilizes purely Front-End<br>
     skills to replicate the Simon Game<br></p>
-<li><a href=""><h4>President Barack Obama Tribute Page</h4></a></li>
+<li><a href="http://codepen.io/mahn00b/full/yJmqGv/"><h4>President Barack Obama Tribute Page</h4></a></li>
     <p>FreeCodeCamp first project, A tribute to my personal favorite<br>
     US president, and all around cool guy.</p>
-<li><a href=""><h4>Free Advice</h4></a></li>
+<li><a href="freequotes.mahmoudyousif.com"><h4>Free Advice</h4></a></li>
     <p>FreeCodeCamp project, Calls to an api, to generate<br>
     randomized quotes and further allows the current, and last three<br>
     generated quotes to twitter.</p>
-<li><a href=""><h4>Pomodoro Clock</h4></a></li>
-    <p>FreeCodeCamp project, implementation of a<br>
-    <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Clock</a>.
+<li><a href="http://codepen.io/mahn00b/full/VjzKaZ"><h4>Pomodoro Clock</h4></a></li>
+<p>FreeCodeCamp project, implementation of a pomodoro clock.
      Project was barely completed, however, it did require some<br>
      intricate event-driven Javascript.</p>
 </ul>
